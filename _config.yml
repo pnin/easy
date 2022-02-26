@@ -1,5 +1,8 @@
 title: easy
 description: "&fast"
 author: Pratik Nilange
+sass:
+  style: compressed
 easy:
-  theme: light
+  theme: dark
+  date_format: "%b %-d, %Y"

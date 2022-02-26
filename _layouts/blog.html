@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page.title}}</title>
+    {% include head.html %}
+</head>
+
+<body class="{% if site.easy.theme == "dark" %} bg-dark text-light{% else %} bg-light text-dark {% endif %}">
+    <div class="jumbotron d-flex align-items-center min-vh-100">
+        <div class="container py-5">
+            <div class="px-3">
+                <h1>{{page.title}}</h1>
+                <!-- <p class="opacity-50 user-select-none">{{site.description}}</p> -->
+            </div>
+            <!-- {% include nav.html %} -->
+            <div class="px-3 pt-3">
+                {{ content }}
+
+
+                {% if site.paginate %}
+                    {% assign posts = paginator.posts %}
+                {% else %}
+                    {% assign posts = site.posts %}
+                {% endif %}
+
+
+                {%- if posts.size > 0 -%}
+                    {%- if page.list_title -%}
+                    <h2 class="post-list-heading">{{ page.list_title }}</h2>
+                    {%- endif -%}
+                    <ul class="post-list ps-0" style="list-style: none;">
+                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                    {%- for post in posts -%}
+                    <li>
+                        <h3>
+                        <a class="post-link" href="{{ post.url | relative_url }}">
+                            {{ post.title | escape }}
+                        </a> <span class="post-meta text-secondary fw-normal">... {{ post.date | date: date_format }}</span>
+                        </h3>
+                        {%- if site.show_excerpts -%}
+                        {{ post.excerpt }}
+                        {%- endif -%}
+                    </li>
+                    {%- endfor -%}
+                    </ul>
+
+                    {% if site.paginate %}
+                    <div class="pager">
+                        <ul class="pagination">
+                        {%- if paginator.previous_page %}
+                        <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
+                        {%- else %}
+                        <li><div class="pager-edge">•</div></li>
+                        {%- endif %}
+                        <li><div class="current-page">{{ paginator.page }}</div></li>
+                        {%- if paginator.next_page %}
+                        <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
+                        {%- else %}
+                        <li><div class="pager-edge">•</div></li>
+                        {%- endif %}
+                        </ul>
+                    </div>
+                    {%- endif %}
+
+                {%- endif -%}
+            </div>
+            <div class="px-3 pt-5">
+                <a href="javascript:history.back()">← Back</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

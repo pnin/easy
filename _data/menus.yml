@@ -1,13 +1,17 @@
+- title: Blog
+  url: /blog
+  external: false
+
 - title: About
-  url: /about/
+  url: /about
   external: false # set true if you using external link, see below
 
 - title: Tags
-  url: /tags/
+  url: /tags
   external: false
 
 - title: Contact
-  url: /contact/
+  url: /contact
   external: false
 
 - title: Github

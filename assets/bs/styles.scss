@@ -1,0 +1,21 @@
+--- 
+--- 
+@import "assets/bs/_scss/bootstrap.scss";
+
+// links
+
+a{
+    {% if site.easy.theme == "dark" %}
+        @extend .link-light;
+    {% else %}
+        @extend .link-primary;
+    {% endif %}
+
+    @extend .fw-normal;
+}
+
+// images
+
+img{
+    @extend .img-fluid, .img-thumbnail; 
+}
