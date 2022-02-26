@@ -4,5 +4,5 @@ author: Pratik Nilange
 sass:
   style: compressed
 easy:
-  theme: dark
+  theme: light
   date_format: "%b %-d, %Y"
