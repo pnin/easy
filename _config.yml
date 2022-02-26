@@ -1,6 +1,7 @@
 title: easy
 description: "&fast"
 author: Pratik Nilange
+base_url: /easy # /blog or something, incase the site is not running in the root url /
 sass:
   sass_dir: assets/bs/scss
   style: compressed

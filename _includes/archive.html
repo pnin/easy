@@ -5,6 +5,6 @@
 {% for count_with_tag in counts_with_tags %}
   {% assign tag = count_with_tag | split:":" | last %}
   {% assign count = site.tags[tag] | size %}
- <a href="/tag/{{ tag | slugify }}">{{ tag }}<sup>{{ count }}</sup></a><br>
+ <a href="{{site.base_url}}/tag/{{ tag | slugify }}">{{ tag }}<sup>{{ count }}</sup></a><br>
 {% endfor %}
 </p>
