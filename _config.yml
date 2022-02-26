@@ -2,6 +2,7 @@ title: easy
 description: "&fast"
 author: Pratik Nilange
 sass:
+  sass_dir: assets/bs/scss
   style: compressed
 easy:
   theme: light
