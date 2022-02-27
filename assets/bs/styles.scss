@@ -19,3 +19,9 @@ a{
 img{
     @extend .img-fluid, .img-thumbnail; 
 }
+
+// sizing
+
+.min-vh-100{
+    min-height: 90vh !important; //for a better view on mobile devices (chrome, actually)
+}
