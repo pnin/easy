@@ -9,8 +9,8 @@ tags: gaming ets2
 
 Here are some low res pictures of my new virtual ride - <strong>Renault T 380</strong>. And yeah, it has got a Russian plate!
 
-![](/assets/media/img/ets2_20210919_114904_00.png)
+![]({{site.base_url}}/assets/media/img/ets2_20210919_114904_00.png)
 
-![](/assets/media/img/ets2_20210919_115005_00.png)
+![]({{site.base_url}}/assets/media/img/ets2_20210919_115005_00.png)
 
-![](/assets/media/img/ets2_20210919_115025_00.png)
+![]({{site.base_url}}/assets/media/img/ets2_20210919_115025_00.png)
