@@ -20,7 +20,7 @@ To test the theme, run `bundle exec jekyll serve` and open your browser at `http
 
 ### Includes
 
-+ `archive` - Weird stuff to list down all the tags, count the number of posts under each tag, and show them on the `tags` page.
++ `archive` - To list down all the tags, count the number of posts under each tag, and show them on the `tags` page. This weird piece of code is included in `tags.md`. 
 
 ### Layouts
 
@@ -31,14 +31,23 @@ There are five layouts in total, you would mostly use two (unless you want to tw
 + `blog` - Layout of the \blog page.
 + `tagpage` - Layout of the tag page that lists down all the posts under a particular tag.
 
-### Color Themes
+### Theme Details
 
-easy currently supports `light` and `dark` themes. You can set this attribute in `_config.yml` file.
++ easy currently supports `light` and `dark` themes. You can set this attribute in `_config.yml` file.
++ easy is entirely built on top of [Bootstrap](https://github.com/twbs/bootstrap). So for most of the component related stuff, you can refer to their [documentation](https://getbootstrap.com/docs/5.2/components/).
 
-### Special notes
+### Important Notes
 
 + When the `base_url` attribute is set to anything other than blank in `_config.yml` file, the "tag" page will break while accessing on your local machine. But don't worry, it will work just fine when deployed on GitHub Pages, etc. An easy turn-around is to leave this attribute blank when working in local, and change it back to your required base_url when pushing the changes to GitHub or anywhere else.
-+ `tag` page is not created dynamically. So you'll need to add a markdown file (like tagname.md) under the tag directory and fill it with basic front-matter. This will compile into a proper html file and list all the posts under the respective tag.
++ `tagpage` is not created dynamically. So you'll need to add a markdown file (like tag-name.md) under the `tag` directory and add the basic front-matter (example shown below for #tools tag). This will compile into a proper html file and list all the posts under the respective tag.
+
+```
+---
+layout: tagpage
+title: "#tools"
+tag: tools
+---
+```
 
 ## Contributing
 
