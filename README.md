@@ -22,7 +22,7 @@ To test the theme, run `bundle exec jekyll serve` and open your browser at `http
 
 + `archive` - Weird stuff to list down all the tags, count the number of posts under each tag, and show them on the `tags` page.
 
-### Layout
+### Layouts
 
 There are five layouts in total, you would mostly use two (unless you want to tweak the standard pages)-
 + `post` - Writing a `post`? Use this layout
@@ -42,7 +42,7 @@ easy currently supports `light` and `dark` themes. You can set this attribute in
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/pnin/easy.
+Bug reports and pull requests are welcome on GitHub at [pnin/easy](https://github.com/pnin/easy).
 
 ## License
 
