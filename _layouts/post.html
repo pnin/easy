@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{page.title}}</title>
+    {% include head.html %}
+</head>
+
+<body class="{% if site.easy.theme == "dark" %} bg-dark text-light{% else %} bg-light text-dark {% endif %}">
+    <div class="jumbotron d-flex align-items-center min-vh-100">
+        <div class="container py-5">
+            <div class="px-3">
+                <h1>{{page.title}}</h1>
+                <p class="text-secondary">{{ page.date | date: site.easy.date_format }}</p>
+                <!-- <p class="opacity-50 user-select-none">{{site.description}}</p> -->
+            </div>
+            <!-- {% include nav.html %} -->
+            <div class="px-3 pt-3">
+                {{ content }}
+            </div>
+            <div class="px-3 pt-5">
+                <a href="javascript:history.back()">← Back</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

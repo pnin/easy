@@ -1,0 +1,27 @@
+--- 
+--- 
+@import "bootstrap";
+
+// links
+
+a{
+    {% if site.easy.theme == "dark" %}
+        @extend .link-light;
+    {% else %}
+        @extend .link-primary;
+    {% endif %}
+
+    @extend .fw-normal;
+}
+
+// images
+
+img{
+    @extend .img-fluid, .img-thumbnail; 
+}
+
+// sizing
+
+.min-vh-100{
+    min-height: 90vh !important; //for a better view on mobile devices (chrome, actually)
+}

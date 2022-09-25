@@ -1,0 +1,13 @@
+title: easy
+description: "An ultra minimalist theme for Jekyll."
+author: Pratik Nilange
+
+base_url: # If the site is running in the root URL, like "example.com", leave this attribute empty.
+# Note: When base_url is set to anything other than blank, the "tag" page breaks while accessing in your local. But don't worry, it will work properly when deployed on GitHub, etc.
+
+sass:
+  sass_dir: assets/bs/scss
+  style: compressed
+easy:
+  theme: light # easy is currently available in light and dark themes
+  date_format: "%b %-d, %Y"

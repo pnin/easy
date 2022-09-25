@@ -1,0 +1,23 @@
+<ul class="nav">
+    {%- assign url = page.url -%}
+    {%- assign menus = site.data.menus -%}
+    {%- if menus %}
+    {%- for menu in menus -%}
+    {%- if url == menu.url -%}
+    <li class="ps-3">
+        <a href="{{ menu.url | relative_url }}">{{ menu.title }}</a>
+    </li>
+    {%- else -%}
+    {%- if menu.external -%}
+    <li class="ps-3">
+        <a href="{{ menu.url | relative_url }}" target="_blank" rel="noopener">{{ menu.title }} ↗</a>
+    </li>
+    {%- else -%}
+    <li class="ps-3">
+        <a href="{{ menu.url | relative_url }}">{{ menu.title }}</a>
+    </li>
+    {%- endif -%}
+    {%- endif -%}
+    {%- endfor -%}
+    {%- endif -%}
+</ul>

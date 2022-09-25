@@ -1,0 +1,19 @@
+- title: Blog
+  url: /blog
+  external: false
+
+- title: About
+  url: /about
+  external: false # set true if you using external link, see below
+
+- title: Tags
+  url: /tags
+  external: false
+
+- title: Contact
+  url: /contact
+  external: false
+
+- title: Github
+  url: https://github.com/pratiknilange
+  external: true
