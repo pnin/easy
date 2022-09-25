@@ -29,7 +29,7 @@ There are five layouts in total, you would mostly use two (unless you want to tw
 + `page` - Need to add a page? `page` is the layout you are looking for.
 + `home` - Layout of the homepage.
 + `blog` - Layout of the \blog page.
-+ `tagpage` - Layout of the \tag page.
++ `tagpage` - Layout of the tag page that lists down all the posts under a particular tag.
 
 ### Color Themes
 
