@@ -27,7 +27,7 @@ To test the theme, run `bundle exec jekyll serve` and open your browser at `http
 There are five layouts in total, you would mostly use two (unless you want to tweak the standard pages)-
 + `post` - Writing a `post`? Use this layout.
 + `page` - Need to add a page? `page` is the layout you are looking for.
-+ `home` - Layout of the home` page.
++ `home` - Layout of the homepage.
 + `blog` - Layout of the \blog page.
 + `tagpage` - Layout of the \tag page.
 
