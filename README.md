@@ -51,7 +51,7 @@ tag: tools
 
 ## Contributing
 
-Bug reports and pull requests are welcome at [pnin/easy](https://github.com/pnin/easy).
+This theme is a work in progress. Bug reports and pull requests are welcome at [pnin/easy](https://github.com/pnin/easy).
 
 ## License
 
