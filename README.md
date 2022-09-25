@@ -28,7 +28,7 @@ There are five layouts in total, you would mostly use two (unless you want to tw
 + `post` - Writing a post? Use this layout.
 + `page` - Need to add a page? This is the layout you are looking for.
 + `home` - Layout of the homepage.
-+ `blog` - Layout of the \blog page.
++ `blog` - Layout of the blog page.
 + `tagpage` - Layout of the tag page that lists down all the posts under a particular tag.
 
 ### Theme Details
